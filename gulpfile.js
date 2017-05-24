@@ -37,7 +37,10 @@ gulp.task('css', function () {
 
 //JS
 gulp.task('js', function () {
-	gulp.src('./app/js/*.js')
+	gulp.src([
+			'./app/js/lib.js',
+			'./app/js/index.js'
+		])
 		.pipe(concat('build.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/js/'))
