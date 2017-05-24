@@ -1,0 +1,22 @@
+{
+  "name": "cvu",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "kostyshyn@ua.fm"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Kostyshyn/CVU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flexboxgrid": "^6.3.2",
+    "normalize-css": "normalize.css#^7.0.0"
+  }
+}
