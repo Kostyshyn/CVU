@@ -1,7 +1,5 @@
 window.onload = function(){
-	var btn = document.getElementById('btn');
 	var dataDiv = document.getElementById('data');
-	var input = document.getElementById('input');
 
 	var ROOT = 'https://jsonplaceholder.typicode.com';
 
@@ -14,15 +12,17 @@ window.onload = function(){
 		'</div>'
 	]);
 
-	btn.addEventListener('click', function(){
-		getData('GET', ROOT + '/posts', function(data){
-			postTemplate.render(data, function(err, result){
-				if (err){
-					throw err;
-				} else {
-					dataDiv.innerHTML = result;
-				}
-			})
-		});
+	getData('GET', ROOT + '/posts', function(err, data){
+		if (err){
+			alert(err.message);
+			return;
+		}
+		postTemplate.render(data, function(err, result){
+			if (err){
+				throw err;
+			} else {
+				dataDiv.innerHTML = result;
+			}
+		})
 	});
 };

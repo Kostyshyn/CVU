@@ -1,9 +1,18 @@
 function getData(method, path, callback){
 	var request = new XMLHttpRequest();
 	request.onload = function(){
-		var res = request.responseText;
-		var parsed = JSON.parse(res);
-		callback(parsed);
+		if (request.status === 200){
+			var res = request.responseText;
+			var parsed = JSON.parse(res);
+			callback(null, parsed);
+		} else {
+			var err = new Error('XHR failed, status: ' + request.status);
+			callback(err, null);
+		}
+	};
+	request.onerror = function(){
+		var err = new Error('XHR failed');
+		callback(err, null);
 	};
 	request.open(method, path);
 	request.send(null);
