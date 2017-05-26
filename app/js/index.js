@@ -1,5 +1,5 @@
 window.onload = function(){
-	var dataDiv = document.getElementById('data');
+	// var dataDiv = document.getElementById('data');
 
 	var ROOT = 'https://jsonplaceholder.typicode.com';
 
@@ -21,7 +21,7 @@ window.onload = function(){
 			if (err){
 				throw err;
 			} else {
-				dataDiv.innerHTML = result;
+				// dataDiv.innerHTML = result;
 			}
 		})
 	});

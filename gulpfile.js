@@ -43,7 +43,8 @@ gulp.task('css', function () {
 gulp.task('js', function () {
 	gulp.src([
 			'./app/js/lib.js',
-			'./app/js/index.js'
+			'./app/js/index.js',
+			'./app/js/slider.js'
 		])
 		.pipe(concat('build.js'))
 		.pipe(uglify())
