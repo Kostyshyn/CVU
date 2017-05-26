@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	uglify = require('gulp-uglify'),
 	opn = require('opn');
-
+//test
 // Запуск локального сервера
 gulp.task('connect', function() {
 	connect.server({
