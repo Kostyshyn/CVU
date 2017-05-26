@@ -26,3 +26,7 @@ window.onload = function(){
 		})
 	});
 };
+
+function menu_toggle(header) {
+	header.classList.toggle('show');
+}
