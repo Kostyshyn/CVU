@@ -3,7 +3,6 @@
 * {
   box-sizing: border-box;
 }
-// test
 
 html, body {
   height: 100%;
@@ -19,7 +18,7 @@ body {
 }
 
 .main-content {
-  margin-top: 200px;
+  margin-top: 160px;
 }
 
 .container {
@@ -29,8 +28,13 @@ body {
 .row {
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
 }
 
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 /*end header*/
 .wrap {
   /*margin:0 100px;*/
@@ -38,7 +42,7 @@ body {
 }
 
 .row {
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 
 .news-header {

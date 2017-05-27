@@ -24,21 +24,7 @@ gulp.task('html', function () {
 });
 
 //CSS
-gulp.task('css', function () {
-	gulp.src([
-			'./app/bower/normalize-css/normalize.css',
-			'./app/bower/flexboxgrid/dist/flexboxgrid.css',
-			'./app/css/index.css'
-		])
-		.pipe(minify())
-		.pipe(concat('style.css'))
-		.pipe(rename({
-			basename: 'style',
-			extname: '.min.css'
-		}))
-		.pipe(gulp.dest('./dist/css/'))
-		.pipe(connect.reload());
-});
+
 
 //JS
 gulp.task('js', function () {
@@ -57,12 +43,14 @@ gulp.task('js', function () {
 gulp.task('sass', function () {
     return gulp.src('./app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./app/css'));
+        .pipe(minify())
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(connect.reload());
 });
 
 gulp.task('watch', function () {
 	gulp.watch(['./dist/*.html'], ['html']);
-	gulp.watch(['./app/sass/**/*.scss', './app/css/*.css'], ['sass', 'css']);
+	gulp.watch(['./app/sass/**/*.scss'], ['sass']);
 	gulp.watch(['./app/js/*.js'], ['js']);
 });
 
