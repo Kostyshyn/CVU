@@ -1,0 +1,145 @@
+/*begin header*/
+
+* {
+  box-sizing: border-box;
+}
+// test
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-size: 14px;
+  font-family: 'Verdana', sans-serif;
+}
+
+.main-content {
+  margin-top: 200px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*end header*/
+.wrap {
+  /*margin:0 100px;*/
+  max-width: 1400px;
+}
+
+.row {
+  margin-bottom: 40px;
+}
+
+.news-header {
+  height:30px;
+  background-color: #7491a2;
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.news-item {
+  display: block;
+  margin: 10px 0;
+  color: #000000;
+  text-decoration: none;
+}
+
+.news-item h4:hover {
+  text-decoration: underline;
+}
+.news-image {
+  width: 150px;
+  height: auto;
+  float: left;
+  padding-right: 10px;
+}
+
+.all-news {
+  text-decoration: underline;
+  color: #607d8b;
+  font-size:18px;
+  line-height: 50px;
+  font-weight: bold;
+  margin: 90px 0;
+}
+
+.info-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.info-image {
+  width: 100%;
+}
+
+.info-item h4:hover {
+  text-decoration: underline;
+}
+
+.slide-image {
+  width: 100%;
+  height: 300px;
+}
+
+.nav-carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.prev, .next {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #b9c6cc;
+  color: #ffffff;
+  border:3px solid #b9c6cc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.next:hover {
+  color: #000000;
+  background-color:#a6a7ab;
+}
+
+.prev:hover {
+  color: #000000;
+  background-color:#a6a7ab;
+}
+
+.prev-left, .next-righr {
+  padding:4px 0;
+  text-align: center;
+}
+
+#slide-title {
+  font-size:20px;
+  line-height: 25px;
+  text-align: center;
+  word-spacing: 4px;
+}
+
+#slide-description {
+  text-align: justify;
+  line-height: 20px;
+  word-spacing: 4px;
+}
+
+.right-block {
+  background-color: #a6a7ab;
+}

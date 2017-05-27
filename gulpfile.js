@@ -28,7 +28,7 @@ gulp.task('css', function () {
 	gulp.src([
 			'./app/bower/normalize-css/normalize.css',
 			'./app/bower/flexboxgrid/dist/flexboxgrid.css',
-			'./app/css/*.css'
+			'./app/css/index.css'
 		])
 		.pipe(minify())
 		.pipe(concat('style.css'))
