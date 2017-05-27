@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	minify = require('gulp-minify-css'),
 	rename = require('gulp-rename'),
 	uglify = require('gulp-uglify'),
+	sass = require('gulp-sass'),
 	opn = require('opn');
 
 // Запуск локального сервера
@@ -52,9 +53,16 @@ gulp.task('js', function () {
     	.pipe(connect.reload());
 });
 
+//SASS
+gulp.task('sass', function () {
+    return gulp.src('./app/sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./app/css'));
+});
+
 gulp.task('watch', function () {
 	gulp.watch(['./dist/*.html'], ['html']);
-	gulp.watch(['./app/css/*.css'], ['css']);
+	gulp.watch(['./app/sass/**/*.scss'], ['sass', 'css']);
 	gulp.watch(['./app/js/*.js'], ['js']);
 });
 
