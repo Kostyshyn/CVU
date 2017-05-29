@@ -42,12 +42,15 @@ header {
         justify-content: center;
         margin: 15px 0 5px;
 
-        .facebook {
-          background: url('../img/fb.png');
-          background-size: 30px 30px;
-          width: 30px;
-          height: 30px;
-        }
+          .facebook {
+
+
+            .fa-facebook-square {
+              border: 1px solid #3b5998;
+              border-radius: 10px;
+              color: #3b5998;
+            }
+          }
 
         .twitter {
           background: url('../img/tw.png');
@@ -115,19 +118,24 @@ header {
         transform: translateX(100%);
         flex-direction: column;
         transition: transform 0.2s ease-in-out;
+        top: 56px;
+        background: $header-bg;
 
         ul {
           flex-direction: column;
 
-          > li {
-            text-transform: uppercase;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-            font-size: 16px;
-            padding: 0;
+            > li {
+              text-transform: uppercase;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+              font-size: 16px;
+              padding: 0;
+              background-color: $header-bg;
 
             a {
               display: block;
               padding: 6px 8px;
+              color: #FFFFFF;
+              background-color: $header-bg;
             }
           }
         }
