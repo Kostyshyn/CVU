@@ -1,13 +1,73 @@
-gul.analytics {
+$header-bg: #607d8b;
+$header-color-soc: #7491a2;
+
+.analytics {
   h2 {
-    margin-bottom: 80px;
+    margin: 7px 0;
   }
 
-  span {
+  .date {
 
+  }
+
+  .content-title {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .slider-analytics {
+    margin-top: 8px;
+    .mySlides {
+
+      .slider-discription {
+        margin: 10px;
+
+      }
+    }
+    .nav-slider {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+
+
+      .btn-nav {
+        border:0px;
+        background: $header-bg;
+        color: #FFFFFF;
+        width: 50px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .marks {
+    margin: 20px;
+
+    .mark {
+      font-weight: 600;
+
+    }
+
+    .mark-analitic {
+      text-decoration: none;
+      background: #b9c6cc;
+      color: #FFFFFF;
+      padding: 7px;
+      margin: 5px;
+      border-radius: 7px;
+
+    }
   }
 }
 
-.date {
-  color: red;
+
+
+
+@media (max-width: 767px) {
+  .main-content {
+    margin-top: 55px;
+  }
 }

@@ -42,21 +42,20 @@ header {
         justify-content: center;
         margin: 15px 0 5px;
 
-          .facebook {
+        .facebook {
+          padding: 5px;
 
-
-            .fa-facebook-square {
-              border: 1px solid #3b5998;
-              border-radius: 10px;
-              color: #3b5998;
-            }
+          .fa-facebook-square {
+            color: #3b5998;
           }
+        }
 
         .twitter {
-          background: url('../img/tw.png');
-          background-size: 30px 30px;
-          width: 30px;
-          height: 30px;
+          padding: 5px;
+
+          .fa-twitter-square {
+            color: #1da1f2;
+          }
         }
       }
 
