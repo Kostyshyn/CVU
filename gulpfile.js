@@ -32,6 +32,7 @@ gulp.task('js', function () {
 			'./app/js/lib.js',
 			'./app/js/index.js',
 			'./app/js/slider.js',
+        	'./app/js/media.js',
 			'./app/js/analytics.js'
 		])
 		.pipe(concat('build.js'))
