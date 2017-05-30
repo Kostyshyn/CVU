@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	minify = require('gulp-minify-css'),
 	rename = require('gulp-rename'),
 	uglify = require('gulp-uglify'),
-	sass = require('gulp-sass'),
+	// sass = require('gulp-sass'),
 	opn = require('opn');
 
 // Запуск локального сервера
@@ -30,8 +30,8 @@ gulp.task('html', function () {
 gulp.task('js', function () {
 	gulp.src([
 			'./app/js/lib.js',
-			'./app/js/index.js',
-			'./app/js/slider.js'
+			'./app/js/slider.js',
+			'./app/js/index.js'
 		])
 		.pipe(concat('build.js'))
 		.pipe(uglify())
@@ -40,17 +40,17 @@ gulp.task('js', function () {
 });
 
 //SASS
-gulp.task('sass', function () {
-    return gulp.src('./app/sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(minify())
-        .pipe(gulp.dest('./dist/css'))
-        .pipe(connect.reload());
-});
+// gulp.task('sass', function () {
+//     return gulp.src('./app/sass/**/*.scss')
+//         .pipe(sass().on('error', sass.logError))
+//         .pipe(minify())
+//         .pipe(gulp.dest('./dist/css'))
+//         .pipe(connect.reload());
+// });
 
 gulp.task('watch', function () {
 	gulp.watch(['./dist/*.html'], ['html']);
-	gulp.watch(['./app/sass/**/*.scss'], ['sass']);
+	// gulp.watch(['./app/sass/**/*.scss'], ['sass']);
 	gulp.watch(['./app/js/*.js'], ['js']);
 });
 
