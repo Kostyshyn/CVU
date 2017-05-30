@@ -1,6 +1,6 @@
 
-    var dataDiv = document.getElementById('media-blocs');
-    // if (dataDiv) {
+    var mediaWrap = document.getElementById('media-blocks');
+     if (mediaWrap) {
     var ROOT = 'data/media.json';
 
         var mediaTemplate = new Template([
@@ -25,24 +25,23 @@
     getData('GET', ROOT, function(err, data){
         if (err){
             alert(err.message);
-            console.log(err.message);
             return;
         } else {
-            newsWrap.innerHTML = '<img src="../img/preloader.gif" alt="preloader">';
+           // mediaWrap.innerHTML = '<img src="img/preloader.gif" alt="preloader">';
 
-            setTimeout(function(){
+            //setTimeout(function(){
 
-                newsTemplate.render(data, function(err, result){
+                mediaTemplate.render(data, function(err, result){
                     if (err){
                         throw err;
                     } else {
-                        newsWrap.innerHTML = result;
+                        mediaWrap.innerHTML = result;
                     }
                 });
 
-            }, 3000);
+           // });
         }
     });
-    // }
+     }
 
 
