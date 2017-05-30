@@ -3,7 +3,7 @@
 window.onload = function(){
 
     var dataDiv = document.getElementById('data'),
-        ROOT = '/json/news.json';
+        ROOT = 'json/news.json';
 
     var postTemplate = new Template([
         '<div class="analytics">',
