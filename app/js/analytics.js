@@ -2,10 +2,8 @@
 
 window.onload = function(){
 
-
-    var dataDiv = document.getElementById('data');
-
-    var url = '/json/news.json';
+    var dataDiv = document.getElementById('data'),
+        ROOT = '/json/news.json';
 
     var postTemplate = new Template([
         '<div class="analytics">',
@@ -15,7 +13,7 @@ window.onload = function(){
             '<span class="date">{{ date }}</span>',
             '<div class="slider-analytics">',
                 '<div class="mySlides">',
-                    '<img width="100%" height="auto" src="{{ slider }}" alt="">',
+                    '<img width="100%" height="auto" src="{{ url }}" alt="">',
                     '<div class="slider-discription">',
                         '<span>{{ text }}</span>',
                     '</div>',
@@ -28,14 +26,12 @@ window.onload = function(){
         '</div>'
     ]);
 
-    getData('GET', url, function(err, data){
+    getData('GET', ROOT, function(err, data){
         if (err){
             alert(err.message);
             return;
         }
-        console.log(data)
         postTemplate.render(data, function(err, result){
-            console.log(result)
             if (err){
                 throw err;
             } else {
