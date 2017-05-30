@@ -36,13 +36,15 @@ body {
   padding-right: 1rem;
 }
 /*end header*/
+
+/*main content*/
 .wrap {
   /*margin:0 100px;*/
   max-width: 1400px;
 }
 
 .row {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .news-header {
@@ -55,13 +57,15 @@ body {
 }
 
 .news-item {
-  display: block;
-  margin: 10px 0;
-  color: #000000;
-  text-decoration: none;
+  margin: 20px 0;
 }
 
-.news-item h4:hover {
+.item-title {
+   text-decoration: none;
+   color: #000000;
+}
+
+.item-title:hover {
   text-decoration: underline;
 }
 .news-image {
@@ -127,7 +131,6 @@ body {
 }
 
 .prev-left, .next-righr {
-  padding:4px 0;
   text-align: center;
 }
 
@@ -145,5 +148,54 @@ body {
 }
 
 .right-block {
-  background-color: #a6a7ab;
+  float: right;
 }
+/*end main content*/
+.videoWrapper {
+  width:100%;
+}
+.electioninfo {
+  margin-top: 30px;
+
+}
+.img-link {
+  width: 290px;
+}
+.rightImg{
+width: 100%;
+}
+.blockHeader{
+  height: 30px;
+    background-color: #7491a2;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 15px;
+    padding-left: 20px;
+    margin: 30px 0 0;
+}
+.mediaDescription {
+  margin-top: 10px;
+
+  }
+.mediaDescription a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  }
+
+  .footerCVU {
+  background-color: #7491a2;
+
+  }
+
+.footerInfo{
+  font-size: 12px;
+  display: inline-block;
+
+}
+
+.footerLogo{
+margin-left: 200px;
+  }
+

@@ -1,166 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/index.css">
-	<script src="js/build.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<!-- begin header -->
+<!-- begin header -->
 
-	<header>
-		<div class="container">
-			<div class="row middle-xs header-top">
-				<div class="col-sm-2 hidden-xs">
-					<div class="logo">
-						<a href="">
-							<img width="100" class="img-responsive" src="http://cvu.org.ua/theme/CVUORGUA2/img/cvu_logo.jpg" alt="logo">
-						</a>
-					</div>
-				</div>
-				<div class="col-xs-9 col-sm-8">
-					<div class="header-title">
-						<h1>вго "комітет виборців України"</h1>
-						<h2>ВГО "комітет виборців України"</h2>
-					</div>
-				</div>
-				<div class="col-xs-3 col-sm-2">
-					<div class="lang-soc">
-						<div class="social">
-							<div class="facebook">
-								<a href="">
-									<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-							<div class="twitter">
-								<a href="">
-									<i class="fa fa-twitter-square  fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-						<div class="language">
-							<a href="">EN</a>
-							<span>|</span>
-							<a href="">UA</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<header>
+    <div class="container">
+        <div class="row middle-xs header-top">
+            <div class="col-sm-2 hidden-xs">
+                <div class="logo">
+                    <a href="index.html">
+                        <img width="100" class="img-responsive" src="../app/img/logo.jpg" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-9 col-sm-8">
+                <div class="header-title">
+                    <h1>вго "комітет виборців України"</h1>
+                    <h2>ВГО "комітет виборців України"</h2>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <div class="lang-soc">
+                    <div class="social">
+                        <div class="facebook"><a href=""></a></div>
+                        <div class="twitter"><a href=""></a></div>
+                    </div>
+                    <div class="language">
+                        <a href="">EN</a>
+                        <span>|</span>
+                        <a href="">UA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="header-bottom">
-			<div class="container">
-				<div class="row middle-xs bottom-menu">
-					<div class="toggle" onclick="menu_toggle(this.parentNode)">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <div class="row middle-xs bottom-menu">
+                <div class="toggle" onclick="menu_toggle(this.parentNode)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-					<div class="col-sm-9 header-menu">
-						<ul>
-							<li><a href="">про кву</a></li>
-							<li><a href="">медіатека</a></li>
-							<li><a href="">проекти</a></li>
-							<li><a href="">аналітика</a></li>
-							<li><a href="">контакти кву</a></li>
-						</ul>
-					</div>
+                <div class="col-sm-9 header-menu">
+                    <ul>
+                        <li><a href="about_cvu.html">про кву</a></li>
+                        <li><a href="media.html">медіатека</a></li>
+                        <li><a href="">проекти</a></li>
+                        <li><a href="">аналітика</a></li>
+                        <li><a href="">контакти кву</a></li>
+                    </ul>
+                </div>
 
-					<div class="col-sm-3">
-						<div class="header-search">
-							<form>
-								<input class="form-control" type="search" placeholder="Пошук по сайту">
-							</form>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-	</header>
+                <div class="col-sm-3">
+                    <div class="header-search">
+                        <form>
+                            <input class="form-control" type="search" placeholder="Пошук по сайту">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-	<!-- end header -->
-	<div class="container wrap">
-		<div class="row main-content">
-			<div class="col-sm-9 col-xs-12 left-block">
-				<div class="row slider">
-					<div class="col-sm-7 col-xs-12">
-						<img class="slide-image" id="slide-image" src="http://cvu.org.ua/uploads/59257686-9830-4d42-a69b-6b400a0a0d19-%D1%96%D0%BD%D1%843.png" alt="">
-					</div>
-					<div class="col-sm-5 col-xs-12">
-						<h3 id="slide-title">За час роботи ВР VIII скликання Президент заветував 39 законів, ...</h3>
-						<p id="slide-description" >Із початку роботи Верховної Ради VIII скликання Президент наклав вето на 39 законів. Ініціаторами більшості із них, 31 закону, були народні депутати, ще 8 законів ініціював уряд (А. Яценюка). Про це йдеться в дослідженні КВУ «Три роки президентства П. Порошенка...</p>
-						<div class="nav-carousel">
-							<div class="prev" onclick="showPrevious()">
-								<div class="prev-left">&#10094;</div>
-							</div>
-							<div class="next" onclick="showNext()">
-								<div class="next-righr">&#10095;</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row news">
-					<div class="col-sm-6 col-xs-12 last-news">
-						<div  class="news-header">ОСТАННІ НОВИНИ</div>
-						<a class="news-item" href="#">
-							<img class="news-image" src="http://cvu.org.ua/uploads/59257686-9830-4d42-a69b-6b400a0a0d19-%D1%96%D0%BD%D1%843.png" alt="inf">
-							<h4 class="item-title">За час роботи ВР VIII скликання Президент заветував 39 за...</h4>
-							<p class="item-description">Із початку роботи Верховної Ради VIII скликання Президент наклав вето на 39 законів. Ініціаторами...</p>
-						</a>
-						<a class="news-item" href="#">
-							<img class="news-image" src="http://cvu.org.ua/uploads/592566cd-72fc-43c4-9fb2-69a60a0a0d19-%D1%96%D0%BD%D1%842.png" alt="inf">
-							<h4 class="item-title">Які фракції підтримують законопроекти Президента, - дослі...</h4>
-							<p class="item-description">Народний Фронт, Блок Петра Порошенка та «Самопоміч» найбільше підтримують законопроек...</p>
-						</a>
-						<a class="news-item" href="#">
-							<img class="news-image" src="http://cvu.org.ua/uploads/592543aa-4658-4840-b2d9-66660a0a0d19-%D1%96%D0%BD%D1%841.png" alt="inf"/>
-							<h4 class="item-title">84% законопроектів Президента стають законами, - КВУ </h4>
-							<p class="item-description">За час роботи Верховної Ради VIII скликання Президент України П. Порошенко подав на розгляд парла...</p>
-						</a>
-						<a class="news-item" href="#">
-							<img class="news-image" src="http://cvu.org.ua/uploads/58e203cb-9724-4550-a453-5f140a0a0d19-%D0%BA%D0%B2%D1%83%20%D0%BB%D0%BE%D0%B3%D0%BE.jpg" alt="inf">
-							<h4 class="item-title">АНОНС. 24 травня прес-конференція КВУ: "Три роки президен...</h4>
-							<p class="item-description">У середу, 24 травня, о 10:30, в Українському Кризовому медіа-центрі відбудеться прес-конференція ...</p>
-						</a>
-						<a class="news-item" href="#">
-							<img class="news-image" src="http://cvu.org.ua/uploads/%D0%BB%D1%8F%D1%88%D0%BA%D0%BE.png" alt="inf">
-							<h4 class="item-title">Радикальна партія Олега Ляшка видалила сторінку "Вконтакте"</h4>
-							<p class="item-description">Після повідомлення КВУ Радикальна партія Олега Ляшка видалила сторінку в російській соціальній ме...</p>
-						</a>
-						<a class="news-item" href="#">
-							<img class="news-image" src="http://cvu.org.ua/uploads/58e203cb-9724-4550-a453-5f140a0a0d19-%D0%BA%D0%B2%D1%83%20%D0%BB%D0%BE%D0%B3%D0%BE.jpg" alt="inf">
-							<h4 class="item-title">АНОНС. 12 травня круглий стіл: «Підтримка політичних парт...</h4>
-							<p class="item-description">У п’ятницю, 12 травня, о 10:30, в готелі «Київ» (вул. Грушевського, 26/1) відбу...</p>
-						</a>
-						<a class="all-news" href="#">Всі новини</a>
-					</div>
-					<div class="col-sm-6 col-xs-12 info-news">
-						<div class="info-item">
-							<div class="news-header">АНАЛІТИЧНІ ЗВІТИ</div>
-							<a class="info-link" href="#">
-								<img class="info-image" src="http://cvu.org.ua/uploads/3%D0%BA%D0%B2%D1%96%D1%82%D0%B5%D0%BD%D1%8C.png" alt="" class="info-image"/>
-								<h4>Дослідження КВУ: «Річниця уряду: чи вдалося Гройсману налагодити співпрацю з Радою»</h4>
-							</a>
-						</div>
-						<div class="info-item">
-							<div class="news-header">ІНФОГРАФІКА</div>
-							<a class="info-link" href="#">
-								<img class="info-image" src="http://cvu.org.ua/uploads/cvu_total_infographics.jpg" alt="" class="info-image"/>
-								<h4>КВУ підбив підсумки голосування на виборах в ОТГ 30 квітня</h4>
-							</a>
-						</div>
-					</div>
-				</div>	
-			</div>
-			<div class="col-sm-3 col-xs-12 right-block">
-				Right Blok
-			</div>
+<!-- end header -->
+<div class="container-fluid wrap">
+    <div class="row main-content">
+        <div class="col-sm-9 col-xs-12 left-block">
+            <div class="row slider">
+                <div class="col-sm-7 col-xs-12">
+                    <img class="slide-image" id="slide-image"
+                         src="http://cvu.org.ua/uploads/59257686-9830-4d42-a69b-6b400a0a0d19-%D1%96%D0%BD%D1%843.png"
+                         alt="">
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <h3 id="slide-title">За час роботи ВР VIII скликання Президент заветував 39 законів, ...</h3>
+                    <p id="slide-description">Із початку роботи Верховної Ради VIII скликання Президент наклав вето на
+                        39 законів. Ініціаторами більшості із них, 31 закону, були народні депутати, ще 8 законів
+                        ініціював уряд (А. Яценюка). Про це йдеться в дослідженні КВУ «Три роки президентства П.
+                        Порошенка...</p>
+                    <div class="nav-carousel">
+                        <div class="prev" id="previous">
+                            <div class="prev-left">&#10094;</div>
+                        </div>
+                        <div class="next" id="next">
+                            <div class="next-righr">&#10095;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row news">
+                <div class="col-sm-6 col-xs-12 last-news">
+                    <div class="news-header">ОСТАННІ НОВИНИ</div>
+                    <div id="news-wrapper">
+                        
+                    </div>
+<!--                     <div class="news-item">
+                        <a href="#"><img class="news-image"
+                                         src="http://cvu.org.ua/uploads/%D1%80%D0%B0%D0%B4%D0%B0.jpeg" alt="inf"></a>
+                        <a class="item-title" href="#"><h4>Менше половини депутатів відвідали всі засідання Ради в
+                            т...</h4></a>
+                        <p class="item-description">Лише 164 народних депутати із 422 відвідали всі засідання Верховної
+                            Ради в травні. Про це йдеться...</p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#"><img class="news-image"
+                                         src="http://cvu.org.ua/uploads/592566cd-72fc-43c4-9fb2-69a60a0a0d19-%D1%96%D0%BD%D1%842.png"
+                                         alt="inf"></a>
+                        <a class="item-title" href="#"><h4>За час роботи ВР VIII скликання Президент заветував 39
+                            за...</h4></a>
+                        <p class="item-description">Із початку роботи Верховної Ради VIII скликання Президент наклав
+                            вето на 39 законів. Ініціаторами...</p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#"><img class="news-image"
+                                         src="http://cvu.org.ua/uploads/592543aa-4658-4840-b2d9-66660a0a0d19-%D1%96%D0%BD%D1%841.png"
+                                         alt="inf"></a>
+                        <a class="item-title" href="#"><h4>Які фракції підтримують законопроекти Президента, -
+                            дослі...</h4></a>
+                        <p class="item-description">Народний Фронт, Блок Петра Порошенка та «Самопоміч» найбільше
+                            підтримують законопроек...</p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#"><img class="news-image"
+                                         src="http://cvu.org.ua/uploads/58e203cb-9724-4550-a453-5f140a0a0d19-%D0%BA%D0%B2%D1%83%20%D0%BB%D0%BE%D0%B3%D0%BE.jpg"
+                                         alt="inf"></a>
+                        <a class="item-title" href="#"><h4>84% законопроектів Президента стають законами, - КВУ </h4>
+                        </a>
+                        <p class="item-description">За час роботи Верховної Ради VIII скликання Президент України П.
+                            Порошенко подав на розгляд парла...</p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#"><img class="news-image"
+                                         src="http://cvu.org.ua/uploads/%D0%BB%D1%8F%D1%88%D0%BA%D0%BE.png"
+                                         alt="inf"></a>
+                        <a class="item-title" href="#"><h4>АНОНС. 24 травня прес-конференція КВУ: "Три роки
+                            президен...</h4></a>
+                        <p class="item-description">У середу, 24 травня, о 10:30, в Українському Кризовому медіа-центрі
+                            відбудеться прес-конференція ...</p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#"><img class="news-image"
+                                         src="http://cvu.org.ua/uploads/58e203cb-9724-4550-a453-5f140a0a0d19-%D0%BA%D0%B2%D1%83%20%D0%BB%D0%BE%D0%B3%D0%BE.jpg"
+                                         alt="inf"></a>
+                        <a class="item-title" href="#"><h4>Радикальна партія Олега Ляшка видалила сторінку
+                            "Вконтакте"</h4></a>
+                        <p class="item-description">Після повідомлення КВУ Радикальна партія Олега Ляшка видалила
+                            сторінку в російській соціальній ме...</p>
+                    </div> -->
+                    <a class="all-news" href="#">Всі новини</a>
+                </div>
+                <div class="col-sm-6 col-xs-12 info-news">
+                    <div class="info-item">
+                        <div class="news-header">АНАЛІТИЧНІ ЗВІТИ</div>
+                        <a class="info-link" href="#">
+                            <img class="info-image"
+                                 src="http://cvu.org.ua/uploads/3%D0%BA%D0%B2%D1%96%D1%82%D0%B5%D0%BD%D1%8C.png"
+                                 alt=""/>
+                            <h4>Дослідження КВУ: «Річниця уряду: чи вдалося Гройсману налагодити співпрацю з Радою»</h4>
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <div class="news-header">ІНФОГРАФІКА</div>
+                        <a class="info-link" href="#">
+                            <img class="info-image" src="http://cvu.org.ua/uploads/cvu_total_infographics.jpg" alt=""/>
+                            <h4>КВУ підбив підсумки голосування на виборах в ОТГ 30 квітня</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-12 right-block">
+            <div class="doslivno">
 
-		</div>
-	</div>
+                <a href="http://doslivno.org/" target="_blank"><img class="rightImg"
+                                                                    src="http://cvu.org.ua/uploads/doslivno.png"></a>
+
+            </div>
+
+            <div class="electioninfo">
+                <a class="electioninfoImg" href="#">
+                    <a href="http://electioninfo.org.ua/"><img class="rightImg"
+                                                               src="../app/img/electioninfo.png"></a>
+            </div>
+
+            <div class="blockHeader">Мультимедіа</div>
+
+
+            <div class="blockHeader">Відео</div>
+            <div class="videoWrapper">
+                <iframe src="http://www.youtube.com/embed/FhqnDEHM1mw?wmode=transparent" width="290" height="180"
+                        frameborder="0"></iframe>
+            </div>
+            <div class="mediaDescription">
+                <a href="/nodes/view/type:media/slug:try-roky-petra-poroshenka-iaki-zakony-vetuie-ta-iaki-pidtrymuie-prezydent">Прес-конференція
+                    КВУ: "Три роки Петра Порошенка: які закони ветує та які підтримує Президент"</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footerCVU">
+        <img class="footerLogo" src="../app/img/footer-logo.png" alt="logo">
+        <div class="footerInfo">
+            <p>
+                © 2017 Використання матеріалів із сайту ВГО "Комітет виборців України" дозволене за умови наявності
+                посилання
+                <br>
+                (у випадку інтернет-видання - гіперпосилання) на http://cvu.org.ua.
+                <br>
+                <br>
+                Передрук матеріалів з інших джерел (ЗМІ, наших партнерів) можливий у випадку зазначення першоджерела.
+            </p>
+
+        </div>
+    </div>
+</footer>
+<script src="js/build.js"></script>
 </body>
 </html>
