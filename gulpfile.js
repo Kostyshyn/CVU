@@ -30,8 +30,10 @@ gulp.task('html', function () {
 gulp.task('js', function () {
 	gulp.src([
 			'./app/js/lib.js',
+			'./app/js/index.js',
 			'./app/js/slider.js',
-			'./app/js/index.js'
+        	'./app/js/media.js'
+
 		])
 		.pipe(concat('build.js'))
 		.pipe(uglify())

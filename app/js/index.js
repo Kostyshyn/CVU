@@ -18,6 +18,7 @@
 	getData('GET', ROOT, function(err, data){
 		if (err){
 			alert(err.message);
+			console.log(err.message);
 			return;
 		} else {
 			newsWrap.innerHTML = '<img src="../img/preloader.gif" alt="preloader">'

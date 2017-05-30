@@ -1,3 +1,46 @@
-h1 {
-  color: #1ca7ea;
+.media-info {
+	margin:20px 0;
+}
+
+.madia-title  {
+	text-decoration:none;
+}
+
+.madia-title h3 {
+	font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+   
+}
+
+.media-content {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.media-content iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.tags {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.media-label {
+	padding: 10px;
+	margin: 0 5px;
+	text-decoration: none;
+	font-size:12px;
+	background-color: #b9c6cc;
+	color: #ffffff;
+	border-radius: 5px;
 }

@@ -1,4 +1,4 @@
-window.onload = function(){
+
 	var i=0;
 	var sliders = [
 	{
@@ -54,6 +54,9 @@ window.onload = function(){
 	}
 	var previous=document.getElementById('previous');
 	var next=document.getElementById('next');
-	previous.addEventListener("click", showPrevious);
-	next.addEventListener("click", showNext);
-};
+	if (previous) {
+        previous.addEventListener("click", showPrevious);
+	}
+	if (next) {
+        next.addEventListener("click", showNext);
+    }
