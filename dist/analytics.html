@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/build.js"></script>
 </head>
@@ -15,22 +16,30 @@
         <div class="row middle-xs header-top">
             <div class="col-sm-2 hidden-xs">
                 <div class="logo">
-                    <a href="">
-                        <img width="100" class="img-responsive" src="img/logo.jpg" alt="logo">
+                    <a href="index.html">
+                        <img width="100" class="img-responsive" src="http://cvu.org.ua/theme/CVUORGUA2/img/cvu_logo.jpg" alt="logo">
                     </a>
                 </div>
             </div>
             <div class="col-xs-9 col-sm-8">
                 <div class="header-title">
-                    <h1>ВГО "КОМІТЕТ ВИБОРЦІВ УКРАЇНИ"</h1>
-                    <h2>ВГО "Комітет виборців України"</h2>
+                    <h1>вго "комітет виборців України"</h1>
+                    <h2>ВГО "комітет виборців України"</h2>
                 </div>
             </div>
             <div class="col-xs-3 col-sm-2">
                 <div class="lang-soc">
                     <div class="social">
-                        <a href=""><div class="facebook"></div></a>
-                        <a href=""><div class="twitter"></div></a>
+                        <div class="facebook">
+                            <a href="">
+                                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="twitter">
+                            <a href="">
+                                <i class="fa fa-twitter-square  fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="language">
                         <a href="">EN</a>
@@ -51,20 +60,21 @@
                     <span></span>
                 </div>
 
-                <div class="col-sm-8 header-menu">
+                <div class="col-sm-9 header-menu">
                     <ul>
-                        <li><a href="">про кву</a></li>
-                        <li><a href="">медіатека</a></li>
+                        <li><a href="about_cvu.html">про кву</a></li>
+                        <li><a href="media.html">медіатека</a></li>
                         <li><a href="">проекти</a></li>
-                        <li><a href="">аналітика</a></li>
-                        <li><a href="">контакти кву</a></li>
+                        <li><a href="analytics.html">аналітика</a></li>
+                        <li><a href="contact_kvu.html">контакти кву</a></li>
                     </ul>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="header-search">
                         <form>
                             <input class="form-control" type="search" placeholder="Пошук по сайту">
+                            <i class="fa fa-search" aria-hidden="true"></i>
                         </form>
                     </div>
                 </div>
@@ -76,63 +86,108 @@
 <!-- end header -->
 <!--content begin-->
 <div class="container wrap">
-    <div class="row main-content">
-        <div class="col-sm-9 col-xs-12 left-block">
-            <div id="data"></div>
-            <!--<div class="analytics">-->
-                <!--<h2>-->
-                    <!--<a href="" class="content-title">Звіт КВУ «Три роки президентства П. Порошенка: які закони підтримує та які блокує президент»-->
-                    <!--</a>-->
-                <!--</h2>-->
-                <!--<span class="date">24-05-2017 14:20</span>-->
-                <!--<div class="slider-analytics">-->
+    <div class="row main-content mrg_t_content">
+        <!--<div class="mrg_t">-->
+            <div class="col-sm-9 col-xs-12 left-block">
+                <div id="data"></div>
+                <!--<div class="analytics">-->
+                    <!--<h2>-->
+                        <!--<a href="" class="content-title">Звіт КВУ «Три роки президентства П. Порошенка: які закони підтримує та які блокує президент»-->
+                        <!--</a>-->
+                    <!--</h2>-->
+                    <!--<span class="date">24-05-2017 14:20</span>-->
+                    <!--<div class="slider-analytics">-->
 
-                        <!--<div class="mySlides">-->
-                            <!--<img width="100%" height="auto" src="http://www.cvu.org.ua/uploads/592566cd-72fc-43c4-9fb2-69a60a0a0d19-%D1%96%D0%BD%D1%842.png" alt="">-->
-                            <!--<div class="slider-discription">-->
-                                <!--<span>Як в раді голосували за законопроекти президента</span>-->
+                            <!--<div class="mySlides">-->
+                                <!--<img width="100%" height="auto" src="http://www.cvu.org.ua/uploads/592566cd-72fc-43c4-9fb2-69a60a0a0d19-%D1%96%D0%BD%D1%842.png" alt="">-->
+                                <!--<div class="slider-discription">-->
+                                    <!--<span>Як в раді голосували за законопроекти президента</span>-->
+                                <!--</div>-->
                             <!--</div>-->
-                        <!--</div>-->
 
-                        <!--<div class="mySlides">-->
-                            <!--<img width="100%" height="auto" src="http://www.cvu.org.ua/uploads/%D1%84%D1%96%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%96%D0%B7%D0%BC.png" alt="">-->
-                            <!--<div class="slider-discription">-->
-                               <!--<span>Рейтенг фінансового популізму</span>-->
+                            <!--<div class="mySlides">-->
+                                <!--<img width="100%" height="auto" src="http://www.cvu.org.ua/uploads/%D1%84%D1%96%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%96%D0%B7%D0%BC.png" alt="">-->
+                                <!--<div class="slider-discription">-->
+                                   <!--<span>Рейтенг фінансового популізму</span>-->
+                                <!--</div>-->
                             <!--</div>-->
-                        <!--</div>-->
 
-                        <!--<div class="mySlides">-->
-                            <!--<img width="100%" height="auto" src="https://pbs.twimg.com/media/DAlCxr3XoAAmAUL.jpg" alt="">-->
-                            <!--<div class="slider-discription">-->
-                                <!--<span>Скільки законопроектів президента стають законами</span>-->
+                            <!--<div class="mySlides">-->
+                                <!--<img width="100%" height="auto" src="https://pbs.twimg.com/media/DAlCxr3XoAAmAUL.jpg" alt="">-->
+                                <!--<div class="slider-discription">-->
+                                    <!--<span>Скільки законопроектів президента стають законами</span>-->
+                                <!--</div>-->
                             <!--</div>-->
-                        <!--</div>-->
 
-                        <!--<div class="mySlides">-->
-                            <!--<img width="100%" height="auto" src="http://www.unn.com.ua/uploads/media/photo/2017/02/13/1eaf30604b3c617e4c3c67b1b80500b1e204c500.jpg" alt="">-->
-                            <!--<div class="slider-discription">-->
-                                <!--<span>На що партії витрачали гроші з держбюджету</span>-->
+                            <!--<div class="mySlides">-->
+                                <!--<img width="100%" height="auto" src="http://www.unn.com.ua/uploads/media/photo/2017/02/13/1eaf30604b3c617e4c3c67b1b80500b1e204c500.jpg" alt="">-->
+                                <!--<div class="slider-discription">-->
+                                    <!--<span>На що партії витрачали гроші з держбюджету</span>-->
+                                <!--</div>-->
                             <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="nav-slider">-->
-                            <!--<button class="btn-nav analitic-prev">&#10094;</button>-->
-                            <!--<button class="btn-nav analitic-nex">&#10095;</button>-->
-                        <!--</div>-->
+                            <!--<div class="nav-slider">-->
+                                <!--<button class="btn-nav analitic-prev">&#10094;</button>-->
+                                <!--<button class="btn-nav analitic-nex">&#10095;</button>-->
+                            <!--</div>-->
 
 
 
+                    <!--</div>-->
+                    <!--<div class="marks">-->
+                        <!--<span>Мітка:</span>-->
+                        <!--<a href="" class="mark-analitic">Аналітика</a>-->
+                    <!--</div>-->
                 <!--</div>-->
-                <!--<div class="marks">-->
-                    <!--<span>Мітка:</span>-->
-                    <!--<a href="" class="mark-analitic">Аналітика</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
-        <div class="col-sm-3 col-xs-12 right-block">
-                Right Blok
-        </div>
+            </div>
+            <div class="col-sm-3 col-xs-12 right-block">
+                <div class="doslivno">
+
+                    <a href="http://doslivno.org/" target="_blank"><img class="rightImg"
+                                                                        src="http://cvu.org.ua/uploads/doslivno.png"></a>
+
+                </div>
+
+                <div class="electioninfo">
+                    <a class="electioninfoImg" href="#">
+                        <a href="http://electioninfo.org.ua/"><img class="rightImg"
+                                                                   src="../app/img/electioninfo.png"></a></a>
+                </div>
+
+                <div class="blockHeader">Мультимедіа</div>
+
+
+                <div class="blockHeader">Відео</div>
+                <div class="videoWrapper">
+                    <iframe src="http://www.youtube.com/embed/FhqnDEHM1mw?wmode=transparent" width="290" height="180"
+                            frameborder="0"></iframe>
+                </div>
+                <div class="mediaDescription">
+                    <a href="/nodes/view/type:media/slug:try-roky-petra-poroshenka-iaki-zakony-vetuie-ta-iaki-pidtrymuie-prezydent">Прес-конференція
+                        КВУ: "Три роки Петра Порошенка: які закони ветує та які підтримує Президент"</a>
+                </div>
+
+            </div>
+        <!--</div>-->
     </div>
 </div>
+
+<footer>
+    <div class="footerCVU">
+        <img class="footerLogo" src="../app/img/footer-logo.png" alt="logo">
+        <div class="footerInfo">
+            <p>
+                © 2017 Використання матеріалів із сайту ВГО "Комітет виборців України" дозволене за умови наявності
+                посилання
+                <br>
+                (у випадку інтернет-видання - гіперпосилання) на http://cvu.org.ua.
+                <br>
+                <br>
+                Передрук матеріалів з інших джерел (ЗМІ, наших партнерів) можливий у випадку зазначення першоджерела.
+            </p>
+
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

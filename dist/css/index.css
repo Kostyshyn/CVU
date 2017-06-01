@@ -1087,42 +1087,44 @@ template {
     -ms-flex-order: 1;
     order: 1; } }
 
-.analytics h2 {
-  margin: 7px 0; }
+.mrg_t_content {
+  margin-top: 157px; }
 
-.analytics .content-title {
-  color: #000000;
-  font-weight: 600;
-  text-decoration: none; }
-
-.analytics .slider-analytics {
-  margin-top: 8px; }
-  .analytics .slider-analytics .mySlides .slider-discription {
-    margin: 10px; }
-  .analytics .slider-analytics .nav-slider {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center; }
-    .analytics .slider-analytics .nav-slider .btn-nav {
-      border: 0px;
-      background: #607d8b;
+.analytics {
+  margin-bottom: 34px; }
+  .analytics h2 {
+    margin: 7px 0; }
+  .analytics .content-title {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none; }
+  .analytics .slider-analytics {
+    margin-top: 8px; }
+    .analytics .slider-analytics .slider-discription {
+      margin: 10px; }
+    .analytics .slider-analytics .nav-slider {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center; }
+      .analytics .slider-analytics .nav-slider .btn-nav {
+        border: 0px;
+        background: #607d8b;
+        color: #FFFFFF;
+        width: 50px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer; }
+  .analytics .marks {
+    margin: 20px; }
+    .analytics .marks .mark {
+      font-weight: 600; }
+    .analytics .marks .mark-analitic {
+      text-decoration: none;
+      background: #b9c6cc;
       color: #FFFFFF;
-      width: 50px;
-      height: 30px;
+      padding: 7px;
       margin: 5px;
-      cursor: pointer; }
-
-.analytics .marks {
-  margin: 20px; }
-  .analytics .marks .mark {
-    font-weight: 600; }
-  .analytics .marks .mark-analitic {
-    text-decoration: none;
-    background: #b9c6cc;
-    color: #FFFFFF;
-    padding: 7px;
-    margin: 5px;
-    border-radius: 7px; }
+      border-radius: 7px; }
 
 @media (max-width: 767px) {
   .main-content {
@@ -1225,6 +1227,9 @@ header {
       transform: translateX(0); }
     header .header-bottom .header-search {
       text-align: right; }
+      header .header-bottom .header-search .fa-search {
+        margin-left: -24px;
+        margin-right: 10px; }
       header .header-bottom .header-search .form-control {
         border-radius: 2px;
         color: #7491A1;
@@ -1274,9 +1279,6 @@ body {
   overflow-x: hidden;
   font-size: 14px;
   font-family: 'Verdana', sans-serif; }
-
-.main-content {
-  margin-top: 120px; }
 
 .container {
   margin: 0 auto; }

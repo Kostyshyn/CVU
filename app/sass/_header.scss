@@ -156,6 +156,11 @@ header {
     .header-search {
       text-align: right;
 
+      .fa-search {
+        margin-left: -24px;
+        margin-right: 10px;
+      }
+
       .form-control {
         border-radius: 2px;
         color: #7491A1;
