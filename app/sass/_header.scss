@@ -156,24 +156,28 @@ header {
     .header-search {
       text-align: right;
 
-      .fa-search {
-        margin-left: -24px;
-        margin-right: 10px;
+      .search-form {
+        position: relative;
+
+        .form-control {
+          width: 100%;
+          border-radius: 2px;
+          color: #7491A1;
+          padding: 4px 25px 4px 6px;
+          appearance: none;
+          box-shadow: none;
+          border: 1px solid #9E9E9D;
+          transition: all 0.235s ease;
+        }
+
+        .fa-search {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+        }
       }
 
-      .form-control {
-        border-radius: 2px;
-        color: #7491A1;
-        padding: 4px 25px 4px 6px;
-        appearance: none;
-        box-shadow: none;
-        border: 1px solid #9E9E9D;
-        transition: all 0.235s ease;
 
-        background-image: url('../img/search-icon.png');
-        background-position: 95%;
-        background-repeat: no-repeat;
-      }
 
       @media (max-width: 767px) {
         margin-right: 1rem;

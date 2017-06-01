@@ -1227,20 +1227,21 @@ header {
       transform: translateX(0); }
     header .header-bottom .header-search {
       text-align: right; }
-      header .header-bottom .header-search .fa-search {
-        margin-left: -24px;
-        margin-right: 10px; }
-      header .header-bottom .header-search .form-control {
-        border-radius: 2px;
-        color: #7491A1;
-        padding: 4px 25px 4px 6px;
-        appearance: none;
-        box-shadow: none;
-        border: 1px solid #9E9E9D;
-        transition: all 0.235s ease;
-        background-image: url("../img/search-icon.png");
-        background-position: 95%;
-        background-repeat: no-repeat; }
+      header .header-bottom .header-search .search-form {
+        position: relative; }
+        header .header-bottom .header-search .search-form .form-control {
+          width: 100%;
+          border-radius: 2px;
+          color: #7491A1;
+          padding: 4px 25px 4px 6px;
+          appearance: none;
+          box-shadow: none;
+          border: 1px solid #9E9E9D;
+          transition: all 0.235s ease; }
+        header .header-bottom .header-search .search-form .fa-search {
+          position: absolute;
+          right: 5px;
+          top: 5px; }
       @media (max-width: 767px) {
         header .header-bottom .header-search {
           margin-right: 1rem; } }
@@ -1412,6 +1413,21 @@ body {
   padding-left: 20px;
   margin: 30px 0 0; }
 
+.videoWrapper {
+  z-index: -1;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .mediaDescription {
   margin-top: 10px; }
 
@@ -1421,14 +1437,18 @@ body {
   font-size: 14px; }
 
 .footerCVU {
+  text-align: center;
+  /*position: absolute;*/
+  bottom: 0px;
+  width: 100%;
   background-color: #7491a2; }
+
+.footerLogo {
+  float: left; }
 
 .footerInfo {
   font-size: 12px;
   display: inline-block; }
-
-.footerLogo {
-  margin-left: 200px; }
 
 .media-info {
   margin: 20px 0; }
