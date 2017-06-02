@@ -1,6 +1,6 @@
 var mediaWrap = document.getElementById('media-blocks');
 if (mediaWrap) {
-    var ROOT = 'data/media.json';
+    var ROOT = 'json/media.json';
 
     var mediaTemplate = new Template([
         '<div>',
