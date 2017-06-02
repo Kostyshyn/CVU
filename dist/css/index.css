@@ -1328,6 +1328,7 @@ body {
   padding-right: 10px; }
 
 .all-news {
+  margin-bottom: 20px;
   color: #ffffff;
   background-color: #b9c6cc;
   padding: 10px;
@@ -1382,7 +1383,8 @@ body {
   font-size: 20px;
   text-align: center;
   cursor: pointer;
-  transition: ease-in-out 0.3s; }
+  transition: ease-in-out 0.3s;
+  outline: none; }
 
 .next:hover {
   color: #000000;
