@@ -52,7 +52,6 @@ function showNews() {
                 if (err) {
                     throw err;
                 } else {
-                    console.log(result);
                     newsWrap.insertAdjacentHTML('beforeend', result);
                 }
             });
