@@ -1,12 +1,8 @@
-	var newsWrap = document.getElementById('news-wrapper');
-    if (newsWrap) {
-        var ROOT = './data.json';
-
-        var newsTemplate = new Template([
+    var newsWrap = document.getElementById('news-wrapper');
+    var newsTemplate = new Template([
             '<div class="news-item">',
-            '<a href="#"><img class="news-image"',
-            'src="{{ image }}"',
-            'alt="inf">',
+            '<a href="#">',
+            '<img class="news-image" src="{{ image }}" alt="inf">',
             '</a>',
             '<a class="item-title" href="#">',
             '<h4>{{ title }}</h4>',
@@ -14,11 +10,12 @@
             '<p class="item-description">{{ text }}</p>',
             '</div>'
         ]);
+     if (newsWrap) {
+        var ROOT = './data.json';
 
         getData('GET', ROOT, function (err, data) {
             if (err) {
                 alert(err.message);
-                console.log(err.message);
                 return;
             } else {
                 newsWrap.innerHTML = '<img src="../img/preloader.gif" alt="preloader">'
@@ -40,4 +37,23 @@
 
 function menu_toggle(header) {
 	header.classList.toggle('show');
+}
+
+function showNews() {
+    var ROOT = './data.json';
+        getData('GET', ROOT, function (err, data) {
+            if (err) {
+                alert(err.message);
+                return;
+            } else {
+                    newsTemplate.render(data, function (err, result) {
+                        if (err) {
+                            throw err;
+                        } else {
+                            console.log(result);
+                            newsWrap.insertAdjacentHTML('beforeend', result);
+                        }
+                    });
+            }
+        });
 }
