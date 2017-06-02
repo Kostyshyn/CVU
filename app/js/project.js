@@ -1,4 +1,4 @@
-var mediaWrap = document.getElementById('project-blocks');
+var mediaWrap = document.getElementById('projectBlocks');
 if (mediaWrap) {
     var ROOT = 'data/project.json';
 
@@ -15,7 +15,7 @@ if (mediaWrap) {
         '<div class="tags">',
         '<div class="marks">',
         '<span>Мітка:</span>',
-        '<a href="" class="mark-analitic">{{ label }}</a>',
+        '<a href="" class="markProject">{{ label }}</a>',
         '</div>',
         '</div>'
     ]);
