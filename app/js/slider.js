@@ -1,7 +1,7 @@
 var slideIndex = 1;
 var sliderWrap = document.getElementById('slider');
 if (sliderWrap) {
-    var ROOT = 'data/slider.json';
+    var ROOT = 'json/slider.json';
 
     var sliderTemplate = new Template([
         '<div class="slide row">',
