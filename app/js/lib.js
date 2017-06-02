@@ -1,3 +1,59 @@
+var http = (function(){
+
+	var get = function(options, resolve, reject){
+		var method = options.method || 'GET';
+		var limit = options.limit || null;
+		var offset = options.offset || null;
+		var async = options.async || true;
+		var url;
+
+		if (options.url){
+			url = options.url;
+			var request = new XMLHttpRequest();
+
+			request.onload = function(){
+				var res = request.responseText;
+				var parsed = JSON.parse(res);
+
+				var data;
+
+				if (limit){
+					data = parsed.slice(0, limit);
+					resolve(data);
+				} else if (offset) {
+					data = parsed.slice(offset);
+					resolve(data);		
+				} else if (offset && limit ){
+					data = parsed.slice(offset, offset + limit);
+					resolve(data);
+				} else {
+					resolve(parsed);
+				}
+			};
+
+			request.onerror = function(){
+				var err = new Error('XHR failed');
+				reject(err);
+			};
+
+			request.open(method, url, async);
+
+			request.send(null);
+		} else {
+			var err = new Error('URL is undefined');
+			reject(err);
+			return;
+		}
+
+	};
+
+	return {
+		get: get
+	}
+
+})();
+
+
 function getData(method, path, callback){
 	var request = new XMLHttpRequest();
 	request.onload = function(){

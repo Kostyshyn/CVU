@@ -1,4 +1,4 @@
-var newsWrap = document.getElementById('news-wrapper');
+var newsWrap = document.getElementById('news-wrapper') || null;
 var newsTemplate = new Template([
     '<div class="news-item">',
     '<a href="#">',
@@ -13,12 +13,20 @@ var newsTemplate = new Template([
 if (newsWrap) {
     var ROOT = 'json/data.json';
 
+    // http.get({
+    //     url: ROOT
+    // }, function(data){ // success callback
+    //     console.log(data);
+    // }, function(err){  // error callback
+    //     throw err;
+    // });
+
     getData('GET', ROOT, function (err, data) {
         if (err) {
             alert(err.message);
             return;
         } else {
-            newsWrap.innerHTML = '<img src="../img/preloader.gif" alt="preloader">'
+            newsWrap.innerHTML = '<img src="img/preloader.gif" alt="preloader">'
 
             setTimeout(function () {
 

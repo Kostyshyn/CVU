@@ -35,13 +35,13 @@ gulp.task('js', function () {
         	'./app/js/media.js',
 			'./app/js/analytics.js'
 		])
-		.pipe(concat('build.js'))
+		// .pipe(concat('build.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/js/'))
     	.pipe(connect.reload());
 });
 
-//SASS
+SASS
 gulp.task('sass', function () {
     return gulp.src('./app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
