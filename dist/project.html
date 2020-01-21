@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -84,41 +83,18 @@
     </div>
 </header>
 
-<!-- end header -->
 <div class="container-fluid wrap">
-    <div class="row main-content mrg_t_content">
+    <div class="row main-content" class="mrg_t_content">
         <div class="col-sm-9 col-xs-12 left-block">
-            <div class="row">
-                <div class="col-xs-12" id="slider"></div>
-            </div>
-            <div class="row news">
-                <div class="col-sm-6 col-xs-12 last-news">
-                    <div class="news-header">ОСТАННІ НОВИНИ</div>
-                    <div id="news-wrapper"></div>
-                    <button type="button" class="all-news" id="all-news" onclick="showNews()">Всі новини</button>
-                </div>
-                <div class="col-sm-6 col-xs-12 info-news">
-                    <div class="info-item">
-                        <div class="news-header">АНАЛІТИЧНІ ЗВІТИ</div>
-                        <a class="info-link" href="#">
-                            <img class="info-image"
-                                 src="http://cvu.org.ua/uploads/3%D0%BA%D0%B2%D1%96%D1%82%D0%B5%D0%BD%D1%8C.png"
-                                 alt=""/>
-                            <h4>Дослідження КВУ: «Річниця уряду: чи вдалося Гройсману налагодити співпрацю з Радою»</h4>
-                        </a>
-                    </div>
-                    <div class="info-item">
-                        <div class="news-header">ІНФОГРАФІКА</div>
-                        <a class="info-link" href="#">
-                            <img class="info-image" src="http://cvu.org.ua/uploads/cvu_total_infographics.jpg" alt=""/>
-                            <h4>КВУ підбив підсумки голосування на виборах в ОТГ 30 квітня</h4>
-                        </a>
+            <div class="row media">
+                <div class="col-sm-12 col-xs-12">
+                    <div class="projectBlocks" id="projectBlocks">
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-3 col-xs-12 right-block">
-            <div class="">
+            <div class="doslivno">
 
                 <a href="http://doslivno.org/" target="_blank"><img class="rightImg"
                                                                     src="http://cvu.org.ua/uploads/doslivno.png"></a>
@@ -126,8 +102,7 @@
             </div>
 
             <div class="electioninfo">
-                <a class="electioninfoImg" href="#">
-                    <a href="http://electioninfo.org.ua/"><img class="rightImg"
+                    <a class="electioninfoImg" href="http://electioninfo.org.ua/"><img class="rightImg"
                                                                src="../app/img/electioninfo.png"></a>
             </div>
 
@@ -149,11 +124,9 @@
 </div>
 <footer>
     <div class="footerCVU">
-        
+        <img class="footerLogo" src="../app/img/footer-logo.png" alt="logo">
         <div class="footerInfo">
-
             <p>
-                <img class="footerLogo" src="../app/img/footer-logo.png" alt="logo">
                 © 2017 Використання матеріалів із сайту ВГО "Комітет виборців України" дозволене за умови наявності
                 посилання
                 <br>
@@ -166,7 +139,6 @@
         </div>
     </div>
 </footer>
-<script src="js/lib.js"></script>
-<script src="js/index.js"></script>
+<script src="js/build.js"></script>
 </body>
 </html>
